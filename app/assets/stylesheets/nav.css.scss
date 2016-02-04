@@ -1,0 +1,187 @@
+html, body { background: #333333; }
+
+#nav {
+  height: 100%;
+  width:300px;
+  background: #0080FF;
+  float:left;
+  position:fixed;
+  margin:0;
+  padding:0;
+  top:0;
+  left:0;
+  
+  .navbar-header {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    margin-bottom:10px;
+    margin-left:10px;
+    
+    .navbar-logo{
+      text-decoration: none;
+      font-size:3em;
+      color:white;
+      margin:auto;
+    }
+  }
+  .navbar-account{
+    font-family: 'Exo 2', sans-serif;
+    color:white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin:auto;
+    width:300px;
+    height:50px;
+    background-color:#555555;
+    
+    .nav-name{
+      font-weight: 800;
+      margin:auto;
+      padding-left:10px;
+    }
+    
+    li a{
+      font-weight: 400;
+      float:left;
+      display: block;
+      text-decoration: none;
+      padding-left:10px;
+    
+      margin:auto;
+      color:white;
+      &:hover{
+        color:#0080FF;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+#content{
+  max-width:500px;
+  margin:auto;
+  position:relative;
+  left:300px;
+}
+
+@media screen and (max-width: 640px){
+  #nav {
+    height: 100px;
+    width:100%;
+    background: #0080FF;
+    float:left;
+    position:fixed;
+    margin:0;
+    padding:0;
+    top:0;
+    left:0;
+    
+      .navbar-header {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 900;
+      margin-bottom:10px;
+      float:left;
+
+      
+      .navbar-logo{
+        text-decoration: none;
+        font-size:1.5em;
+        color:white;
+        margin:auto;
+        
+      }
+    }
+    .navbar-account{
+    font-family: 'Exo 2', sans-serif;
+    
+    color:white;
+    list-style-type: none;
+    padding: 0;
+     margin:auto;
+     width:auto;
+     height:100px;
+      background-color:#555555;
+      float:left;
+      
+      .nav-name{
+        font-weight: 800;
+        margin:auto;
+      }
+      
+      li a{
+        font-weight: 400;
+        float:left;
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        margin:auto;
+        color:white;
+        &:hover{
+          color:#0080FF;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+    #content{
+    width:200px;
+    margin:auto;
+    position:relative;
+    left:10px;
+    top:100px;
+    
+  }
+  
+   
+}
+
+
+/* bootstrap stuff
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+
+@media (min-width: 768px) {
+
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+}
+*/

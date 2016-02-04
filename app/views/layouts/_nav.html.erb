@@ -1,0 +1,20 @@
+<div class="navbar">
+
+  <div class="navbar-header">
+    <a class="navbar-logo" href=<%= root_path %>>Your<br> Game<br> Pile<br></a>
+  </div>
+  
+  <div class="navbar-nav">
+    <ul class="navbar-account">
+     <% if logged_in? %>
+          <li class="nav-name"><%= current_user.username %></li>
+          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+          <li><%= link_to "Account", user_path(current_user) %></li>
+        <% else %>
+          <li class="nav-name">Not Signed in</li>
+          <li><%= link_to "Sign up", signup_path %></li>
+          <li><%= link_to "Log in", login_path %></li>
+      <% end %>
+  </div>
+</div>
+
