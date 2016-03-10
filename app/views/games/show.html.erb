@@ -1,0 +1,15 @@
+<h1><%= @game.title %></h1>
+<%= link_to "Back to Library", games_path %><br>
+
+<%= form_for(current_user.games.find(@game.id),
+              html: {method: :delete}) do |f| %>
+  <%= f.submit "Remove From Library" %>
+  <%end%>
+  
+<%= image_tag(@game.image.url(:medium), alt: "#{@game.title}") %>
+<ul>
+  <li><%= @game.api_id %></li>
+  <li><%= @game.api_url %></li>
+  <li><%= @game.image_url %></li>
+  <%= debug(params) if Rails.env.development? %>
+</ul>

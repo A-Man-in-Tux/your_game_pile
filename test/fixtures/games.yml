@@ -1,7 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-
-two:
-  title: MyString
+foo_game:
+  title: Foo
+  api_id: 32442234

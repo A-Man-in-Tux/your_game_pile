@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+
+  
+
   root 'static_pages#home'
 
   get    'about'  => 'static_pages#about'
@@ -9,10 +12,17 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   
   get    'signup' => 'users#new'
-
   
-  resources :users
-
+  get 'add' => 'games#new'
+  get 'remove_game' => 'games#remove_game'
+  
+  resources :users do
+    resources :games
+    resources :librarys, only: [:create, :destroy]
+  end
+  resources :librarys, only: [:create, :destroy]
+  
+  resources :games
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

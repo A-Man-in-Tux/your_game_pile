@@ -1,0 +1,56 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.game_list {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:80%;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  color:white;
+  
+  li{
+    float: left;
+    margin:10px;
+    position:relative; 
+    border:0;
+    width:157px;
+    height:218px;
+    
+    a{
+      border:0;
+    }
+    
+    .game_lable{
+      background: black;
+      opacity: 0.8;
+      filter: alpha(opacity=60); /* For IE8 and earlier */
+      position:absolute;
+      bottom:0;
+      width:100%;
+      
+    }
+    
+    .add_button {
+      background:#0080FF;
+      color:white;
+    }
+    .game-img{
+      width:157px;
+      height:218px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .game_list {
+    list-style-type:none;
+    margin:auto;
+    width:auto;
+    li{
+      float: left;
+    }
+  }
+}

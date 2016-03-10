@@ -1,0 +1,22 @@
+<% provide(:title, "Games") %>
+<h1>Games</h1>
+  
+  <%= form_tag games_path, :method => 'get' do %>
+    <p>
+       <%= text_field_tag :search, params[:search] %>
+       <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %>
+  
+  <!--TODO make partial for game list -->
+  <ul class="game_list">
+    <% for game in @games %>
+    <li>
+      <%= link_to image_tag(game.image.url(:thumb), alt: "#{game.title}"), game_path(game) %>
+      <div class="game_lable">
+        <%= "#{game.title}" %>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  
