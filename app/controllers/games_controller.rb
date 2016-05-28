@@ -1,22 +1,27 @@
 class GamesController < ApplicationController
  before_action :logged_in_user
+ 
  def index
    @user = current_user
+   @searched_games = []
    if params[:search]
     @games = @user.games.search(params[:search])
    else
     @games = @user.games.all
+    @game = Game.new
    end
  end
  
  def new
   @game = Game.new
   if params[:search]
-   @games = Game.giantbomb_search(params[:search])
+   @searched_games = Game.giantbomb_search(params[:search])
+   respond_to do |format|
+    format.js
+   end
   else
-   @games = []
+   @searched_games = []
   end
-    
  end
   
  def create
@@ -33,13 +38,30 @@ class GamesController < ApplicationController
    @user = current_user
    @user.add(@game)
   end
-   redirect_to games_path
+   @games = @user.games.all
+   @searched_games = []
+   respond_to do |format|
+    format.html { render :index }
+    format.js 
+   end
  end
-  
  
  def show
   @user = current_user
   @game = @user.games.find(params[:id])
+ end
+ 
+ def sort
+  @user = current_user
+  @searched_games = []
+  if params[:filter]
+   @games = @user.games.all
+   @games = Game.filter(params[:filter],@games)
+   respond_to do |format|
+    format.js 
+    format.html {render :index}
+   end
+  end
  end
  
 def remove_game
@@ -64,7 +86,7 @@ end
  end
   
  def game_params
-  params.require(:game).permit(:title, :api_id, :api_url, :image_url, :api_data, :image)
+  params.require(:game).permit(:title, :api_id, :api_url, :image_url, :api_data, :image, :filter, :platforms)
  end
   
 end

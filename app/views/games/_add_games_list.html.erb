@@ -1,0 +1,20 @@
+<% for game in @searched_games %>
+<li id=<%= "#{game[:title]}" %>>
+    <%=form_for @game, remote: true do |f| %>
+        <%=f.hidden_field :title, value: "#{game[:title]}" %>
+        <%=f.hidden_field :api_id, value: "#{game[:api_id]}" %>
+        <%=f.hidden_field :api_url, value: "#{game[:api_url]}" %>
+        <%=f.hidden_field :image_url, value: "#{game[:image_url]}" %>
+        <%=f.hidden_field :api_data, value: "#{game[:api_data]}" %>
+        <%=f.hidden_field :platforms, value: "#{game[:platforms]}" %>
+       <div class="game_thumb">
+        <%= image_submit_tag(game[:image_url], class:'thumb-img') %>
+       </div>
+    <% end %>
+    
+    <div class="game_lable">
+        <%= game[:title] %>
+    </div>
+</li>
+<% end %>
+<%= debug(params) if Rails.env.development? %>

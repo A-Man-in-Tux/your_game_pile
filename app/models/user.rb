@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
   has_many :librarys
   has_many :games, through: :librarys
   

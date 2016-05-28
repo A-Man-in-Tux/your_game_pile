@@ -1,0 +1,23 @@
+<ul class="game_list">
+    <% for game in @games %>
+    
+    <li>
+      <div class="game_img">
+        <%= link_to image_tag(game.image.url(:thumb), alt: "#{game.title}"), game_path(game), style: "padding:none" %>
+        <div class="game_info">
+          <div class="game_lable">
+            <%= "#{game.title}" %>
+          </div>
+          <div class="game_value">
+            <% if game.price_cents == nil %>
+              Value: N/A
+            <% else %>
+              Value: <%= "#{game.price_cents}" %>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+<%= debug(params) if Rails.env.development? %>

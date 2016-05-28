@@ -1,11 +1,13 @@
-<h1>Welcome to Your Game Pile</h1>
-<div class="greeting">
-  <% if logged_in? %>
-          <h1>Hi <%= current_user.username %></h1>
-        <% else %>
-          <%= link_to "Sign up", signup_path %><br>
-          <%= link_to "Log in", login_path %>
-        <% end %>
-    </div>
+<% if logged_in? %>
+    <%= render('user_home') %>
+<% else %>
+    <%= render('new_user_home') %>
+<% end %>
+
+<script>
+    $(".header").css("height", "0px")
+    $(".header_nav").css("height", "0px")
+</script>
+ 
 
 

@@ -16,13 +16,21 @@ Rails.application.routes.draw do
   get 'add' => 'games#new'
   get 'remove_game' => 'games#remove_game'
   
+  
+
+  get "games/sort", as: "sort"
+  
+   
+  
   resources :users do
     resources :games
+    resources :platforms
     resources :librarys, only: [:create, :destroy]
   end
   resources :librarys, only: [:create, :destroy]
   
   resources :games
+  resources :platforms
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

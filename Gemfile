@@ -36,6 +36,10 @@ gem 'bootstrap-sass'
 
 gem "paperclip", "~> 4.3"
 
+gem 'money-rails'
+
+gem 'httparty'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -53,6 +57,8 @@ group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :production do

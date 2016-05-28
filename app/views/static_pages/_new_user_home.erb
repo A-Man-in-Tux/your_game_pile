@@ -1,0 +1,92 @@
+<div home_container>
+  <div class="login_popup">
+    <%= render('login') %>
+  </div>
+  <div class="signup_popup">
+    <%= render('sign_up') %>
+  </div>
+<div class="home_background">
+  
+</div>  
+  <div class="home_content">  
+    
+    <div class="logo">
+      <%= image_tag("temp logo.png")%>
+    </div>
+    
+    
+    <div class="intro_message">
+      <p>
+        Welcome to Your Game Pile!
+        A free app to help you keep track 
+        of the value and size of your game collection.
+      </p>
+    </div>
+    
+    <div class="signup">
+      <div class="login_signup">
+        <a href="javascript:void(0)" id="login_link">Log in</a>
+        <div class="divider"></div>
+        <a href="javascript:void(0)" id="signup_link">Sign up</a>
+      </div>
+      <div class="try">
+        <p>
+          Take it for a spin with 
+          a sample account.
+        </p>
+        <div id="try_link">
+          <%= link_to "Try it", '#' %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="app_info">
+      <ul>
+        <li id="info_1">
+          <h1>Value</h1>
+          <p>
+            This app will allow you to keep track of what your collection is worth 
+            exposing valuable games in your collection that you may not have know 
+            were valuable. Using the ebay api this app gives you a good sense of 
+            what the going rate of a game on the the ebay website is for each game 
+            in your collection. This saves you a great deal of time as doing this
+            manually is very tedious especially for large collections.
+          </p>
+        </li>
+        <li>
+          <h1>Stats</h1>
+          <p>
+            See information at a glance such as the size and makeup of your 
+            collection. Learn things about you collection 
+            that you might not have known. 
+          </p>
+        </li>
+        <li>
+          <h1>Organastion</h1>
+          <p>
+            All of your collection at your fingertips. Don't remember if you have
+            a certain game? This app allows you to quickly search your collection. 
+            View your collection via a specific console or genre.
+          </p>
+        </li>
+      </ul>
+    </div> 
+  </div>
+</div>
+<script>
+  $("#login_link").click(function(){
+    $(".login_popup").fadeIn()
+  });
+  
+   $("#login_cancel").click(function(){
+    $(".login_popup").fadeOut()
+  });
+  
+  $("#signup_link").click(function(){
+    $(".signup_popup").fadeIn()
+  });
+  
+   $("#signup_cancel").click(function(){
+    $(".signup_popup").fadeOut()
+  });
+</script>

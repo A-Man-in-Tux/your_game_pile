@@ -1,0 +1,153 @@
+@import "variables";
+
+.user_home_content{
+ 
+  margin:auto;
+  width:100%;
+ 
+  
+  .user_header{
+    height:50px;
+    background-color:$light_blue;
+    ul{
+      list-style-type: none;
+      margin:0;
+      li{
+        float:left;
+        margin-left:10px;
+        margin-top:10px;margin-top:10px;
+        a{
+          font-family: 'Exo 2', sans-serif;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    
+  }
+  
+  .greeting_container{
+    position:relative;
+    background-color:white;
+    height:400px;
+  }
+  
+  .greeting{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-200px 0 0 -400px;
+    background-color:white;
+    
+    color:$light-blue;
+    height:200px;
+    width:800px;
+    
+
+    h1{
+      font-size:6em;
+      color:$light-blue;
+      margin:0;
+      text-align:center;
+    }
+    h2{
+      font-family: 'Exo 2', sans-serif;
+      font-weight:100;
+      text-align:center;
+      font-size:3em;
+    }
+  }
+  .game_views_container{
+    width:800px;
+  }
+  .game_views{
+    background-color:white;
+    margin:auto;
+    height:200px;
+    width:420px;
+    text-align:center;
+    a{
+        font-weight: 800;
+        display: block;
+        text-decoration: none;
+        margin:auto;
+        color:$light-blue;
+        font-size: 1.7em;
+        font-family: 'Exo 2', sans-serif;
+        text-align:center;
+    }
+    .game_views_icon{
+      margin:auto;
+      height:200px;
+      width:200px;
+      float:left;
+    }
+    .console_views_icon{
+      margin:auto;
+      height:200px;
+      width:200px;
+      float:left;
+      margin-left:20px;
+    }
+  }
+  .top_games{
+    height:200px;
+    h1{
+      text-align:center;
+    }
+    ul{
+     height: 200px;
+     width:531px;
+     
+     
+      li{
+        
+        
+      }
+    }
+    .top_games_list{
+      margin:auto;
+      width:800px;
+      
+      .game_list{
+        margin:auto;
+    
+      }
+    }
+  }
+  
+  .stat_highlights_container{
+    position:absolute;
+    background-color:$dark_blue;
+    
+    width:100%;
+    float:left;
+   
+    bottom:0;
+    
+    h1{
+        margin:auto;
+        text-align:center;
+        color:white;
+      }
+    h2{
+      font-family: 'Exo 2', sans-serif;
+      text-align:center;
+      color:white;
+      font-weight:100;
+      
+    }
+      
+    .stat_highlights{
+      margin:auto;
+      width:800px;
+      height:100%;
+      
+     
+      
+    }
+  }
+  
+  
+}
+

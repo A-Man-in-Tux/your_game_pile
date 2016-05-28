@@ -1,0 +1,662 @@
+/* line 10, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.games_content {
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  left: 300px;
+  top: 100px;
+  padding: 0;
+}
+
+/* line 19, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+/* line 28, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li {
+  float: left;
+  margin: 10px;
+  position: relative;
+  border: 0;
+  width: 157px;
+  height: 218px;
+}
+/* line 36, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+/* line 42, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li .game_info {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  position: absolute;
+}
+/* line 50, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li .game_lable {
+  background: black;
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 56, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li .game_value {
+  margin: 0;
+  background: black;
+  width: 100%;
+  height: 20px;
+}
+/* line 64, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+.game_list li .game-img {
+  width: 157px;
+  height: 218px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 76, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+  .game_list {
+    list-style-type: none;
+    margin: auto;
+    width: auto;
+  }
+  /* line 80, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/games.scss */
+  .game_list li {
+    float: left;
+  }
+}
+/* line 4, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header {
+  background: white;
+  height: 100px;
+  width: 100%;
+  color: white;
+  float: left;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+/* line 19, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  list-style: none;
+  position: fixed;
+  left: 315px;
+  padding: 0;
+}
+/* line 31, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav ul {
+  margin: 0;
+}
+/* line 35, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li {
+  display: inline;
+  float: left;
+  margin: 0;
+  height: 100%;
+}
+/* line 41, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_title {
+  position: relative;
+  width: 117px;
+  height: 40px;
+  top: 50%;
+  margin-top: -36px;
+}
+/* line 49, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_title h1 {
+  position: absolute;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: 2.25em;
+  color: #2B3D59;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  height: 30px;
+}
+/* line 62, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_search {
+  position: relative;
+  top: 50%;
+  height: 100px;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+/* line 68, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_search .search_field {
+  height: 20px;
+}
+/* line 72, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .submit_button {
+  background-color: #2B3D59;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  border: none;
+  height: 25px;
+}
+/* line 79, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_filter {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  top: 50%;
+  margin-top: -15px;
+  height: 30px;
+}
+/* line 86, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/header.css.scss */
+.header .header_nav li .header_filter .dropdown {
+  height: 25px;
+  background-color: #2B3D59;
+  color: white;
+}
+/* line 5, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.home_background {
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 11, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.home_content {
+  padding-top: 20px;
+  background: url(/assets/nintendo-1557929-9a604fa216d6631129825e53938d8184b290198c66e58a5c35aebd171aa2d7db.gif);
+}
+
+/* line 17, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.game_views a {
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  color: #2B3D59;
+  font-size: 2em;
+  font-family: 'Exo 2', sans-serif;
+}
+/* line 26, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.game_views .game_views_icon {
+  height: 100px;
+  width: 100px;
+}
+/* line 29, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.game_views .game_views_icon .game_views_icon_box {
+  height: 90px;
+  width: 100px;
+  background-color: #2B3D59;
+}
+
+/* line 38, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.header {
+  height: 0 !important;
+}
+
+/* line 41, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.logo {
+  margin: auto;
+  width: 132px;
+}
+
+/* line 46, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.intro_message {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 2.9em;
+  width: 800px;
+  height: 250px;
+  margin: auto;
+  color: white;
+}
+/* line 54, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.intro_message p {
+  height: 200px;
+  text-align: center;
+}
+
+/* line 60, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup {
+  background-color: #1E2B42;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  padding-top: 30px;
+}
+/* line 66, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup a {
+  margin: auto;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  float: left;
+}
+/* line 75, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup .login_signup {
+  width: 276px;
+  height: 48px;
+  margin: auto;
+}
+/* line 80, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup .login_signup .divider {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+/* line 91, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup .try {
+  width: 200px;
+  height: 125px;
+  margin: auto;
+  margin-top: 20px;
+}
+/* line 96, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup .try p {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+/* line 104, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.signup .try #try_link {
+  margin: auto;
+  width: 101px;
+}
+
+/* line 112, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info {
+  background-color: #1E2B42;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  float: left;
+}
+/* line 118, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info ul {
+  margin: auto;
+  width: 800px;
+}
+/* line 123, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info ul li {
+  list-style-type: none;
+  height: 400px;
+  margin: auto;
+  margin-left: 10px;
+  margin-top: 50px;
+  float: left;
+  width: 251px;
+  background-color: #2B3D59;
+}
+/* line 133, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info ul li h1 {
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+}
+/* line 140, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info ul li p {
+  font-size: 1em;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  width: 200px;
+  margin: auto;
+  text-align: justify;
+}
+/* line 152, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/home.scss */
+.app_info ul #info_1 {
+  margin-left: 0px;
+}
+/* line 5, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+.overlay {
+  background-color: #1E2B42;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+.login_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+/* line 24, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+.login_container .login_box {
+  position: absolute;
+  z-index: 4;
+  width: 800px;
+  height: 400px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -400px;
+}
+/* line 35, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+.login_container .login_box .login_form {
+  margin: auto;
+  width: 600px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #647086;
+}
+/* line 42, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+.login_container .login_box .login_form a {
+  text-decoration: none;
+  color: #2B3D59;
+}
+
+/* line 50, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/login.scss */
+#login_cancel {
+  float: right;
+}
+/* line 7, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav {
+  height: 100%;
+  width: 250px;
+  background: #2B3D59;
+  float: left;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 19, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar-header {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-left: 25%;
+}
+/* line 25, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar-header .navbar-logo {
+  text-decoration: none;
+  font-size: 3em;
+  color: white;
+  margin: auto;
+}
+/* line 33, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment, #nav .navbar-account, #nav .navbar-veiws, #nav .navbar-stats {
+  width: 100%;
+  background-color: #1E2B42;
+  position: relative;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+/* line 43, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment h1, #nav .navbar-account h1, #nav .navbar-veiws h1, #nav .navbar-stats h1 {
+  font-weight: 800;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #647086;
+  text-align: center;
+}
+/* line 53, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment ul, #nav .navbar-account ul, #nav .navbar-veiws ul, #nav .navbar-stats ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 58, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment ul .nav-name, #nav .navbar-account ul .nav-name, #nav .navbar-veiws ul .nav-name, #nav .navbar-stats ul .nav-name {
+  font-weight: 800;
+  margin: auto;
+  padding-left: 20px;
+}
+/* line 65, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment li, #nav .navbar-account li, #nav .navbar-veiws li, #nav .navbar-stats li {
+  width: 100%;
+}
+/* line 69, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment li a, #nav .navbar-account li a, #nav .navbar-veiws li a, #nav .navbar-stats li a {
+  padding-left: 20px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  color: white;
+}
+/* line 77, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar_segment li a:hover, #nav .navbar-account li a:hover, #nav .navbar-veiws li a:hover, #nav .navbar-stats li a:hover {
+  background-color: #2B3D59;
+}
+/* line 83, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar-account {
+  height: 100%;
+  float: none;
+  margin-bottom: 10px;
+}
+/* line 90, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar-veiws {
+  height: 100%;
+  float: none;
+}
+/* line 98, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+#nav .navbar-stats {
+  height: 400px;
+  float: none;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 110, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav {
+    height: 100px;
+    width: 100%;
+    background: #0080FF;
+    float: left;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+  /* line 121, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-header {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+    float: left;
+  }
+  /* line 128, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-header .navbar-logo {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    margin: auto;
+  }
+  /* line 136, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-account {
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: auto;
+    height: 100px;
+    background-color: #555555;
+    float: left;
+  }
+  /* line 148, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-account .nav-name {
+    font-weight: 800;
+    margin: auto;
+  }
+  /* line 153, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-account li a {
+    font-weight: 400;
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: auto;
+    color: white;
+  }
+  /* line 161, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #nav .navbar-account li a:hover {
+    color: #0080FF;
+    text-decoration: underline;
+  }
+
+  /* line 168, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/nav.css.scss */
+  #content {
+    width: auto;
+    margin: auto;
+    position: relative;
+    left: 10px;
+    top: 100px;
+  }
+}
+/* bootstrap stuff
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+
+@media (min-width: 768px) {
+
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+}
+*/
+/* line 5, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 10, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+html, body {
+  background: white;
+  margin: 0;
+}
+
+/* line 16, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+#content .alert {
+  color: red;
+}
+
+/* line 21, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  color: #2B3D59;
+}
+
+/* line 27, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+.login_popup {
+  display: none;
+}
+
+/* line 33, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+.game_views a {
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  color: #2B3D59;
+  font-size: 2em;
+  font-family: 'Exo 2', sans-serif;
+}
+/* line 42, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+.game_views .game_views_icon {
+  height: 100px;
+  width: 100px;
+}
+/* line 45, /home/ubuntu/workspace/your_game_pile/app/assets/stylesheets/static_pages.scss */
+.game_views .game_views_icon .game_views_icon_box {
+  height: 90px;
+  width: 100px;
+  background-color: #2B3D59;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+

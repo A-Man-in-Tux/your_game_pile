@@ -1,0 +1,48 @@
+<div class="user_home_content">
+  <div class="user_header">
+    <ul>
+      <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+      <li><%= link_to "Account", user_path(current_user) %></li>
+    </ul>
+  </div>
+  <div class="greeting_container">
+      <div class="greeting">
+         <h1>
+           Hi <%= current_user.username %>
+         </h1>
+         <h2>
+           Click one of the icons below to view your libaray
+         </h2>
+          <div class="game_views_container">
+            <div class="game_views">
+              <div class="game_views_icon">
+                <%= link_to image_tag("games-icon.gif"), games_path %>
+                <%= link_to "Games", games_path %>
+              </div>
+              <div class="platform_views_icon">
+                <%= link_to image_tag("platforms-icon.gif"), platforms_path %>
+                <%= link_to "Platforms", platforms_path %>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+   
+    <div class="stat_highlights_container">
+      <h1>
+          Stats
+        </h1>
+       <div class="top_games">
+      <h2>
+        Top 3 Highiest Value
+      </h2>
+      <div class="top_games_list">
+        <%= render 'games/game_list' %>
+      </div>
+      
+    </div>
+      <div class="stat_highlights">
+        
+      </div>
+    </div>
+</div>

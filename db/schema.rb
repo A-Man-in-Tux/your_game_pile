@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303003353) do
+ActiveRecord::Schema.define(version: 20160524234803) do
 
   create_table "games", force: :cascade do |t|
     t.string   "title"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 20160303003353) do
     t.string   "api_url"
     t.string   "image_url"
     t.text     "api_data"
+    t.integer  "price_cents"
+    t.string   "price_currency",     default: "USD", null: false
+    t.string   "epid"
+    t.text     "platforms"
   end
 
   create_table "libraries", force: :cascade do |t|

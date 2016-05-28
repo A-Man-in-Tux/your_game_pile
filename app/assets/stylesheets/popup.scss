@@ -1,0 +1,21 @@
+@import "variables";
+
+.overlay{
+  background-color: $dark_blue;
+  height:100%;
+  width:100%;
+  position:fixed;
+  z-index:3;
+  opacity: 0.5;
+  margin:0;
+  padding:0;
+  
+}
+
+.popup_container{
+  position:fixed;
+  height:100%;
+  width:100%;
+  z-index:4;
+}
+

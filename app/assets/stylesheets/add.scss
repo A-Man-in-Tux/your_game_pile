@@ -1,0 +1,66 @@
+@import "variables";
+
+.add_box{
+  position:absolute;
+  z-index:4;
+  width:800px;
+  height:600px;
+  background-color:white;
+  top: 50%;
+  left: 50%;
+  margin-top:-300px;
+  margin-left:-400px;
+  
+  .add_form{
+    width:600px;
+    height:400px;
+    position:absolute;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    margin-top:-200px;
+    margin-left:-300px;
+    h1{
+      margin-top:0;
+    }
+  }
+}
+
+.submit_button{
+            background-color:$light_blue;
+            color:white;
+            font-family: 'Exo 2', sans-serif;
+            border:none;
+            height:25px;
+          }
+          
+ .add_game_list{
+   list-style:none;
+   font-family: 'Exo 2', sans-serif;
+   font-weight:100;
+   text-align:center;
+   margin:auto;
+   margin-top:10px;
+   padding:0;
+     li{
+        position:relative; 
+        float:left;
+        display:inline-block;
+        width:150px;
+        height:150px;
+        &:hover{
+            background-color:$light_blue;
+            color:white;
+          }
+        }
+      .game_thumb{
+        height: 109px;
+        width: 78.5px;
+        margin:auto;
+        
+      .thumb-img{
+        max-height:100%;
+        max-width:100%;
+     }
+   }
+ }

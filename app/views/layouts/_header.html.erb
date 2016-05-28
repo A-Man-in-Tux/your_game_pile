@@ -1,0 +1,47 @@
+
+<div class="header">
+  
+  <ul class="header_nav">
+      <li>
+          <div class="header_title">
+              <h1><%= yield(:title) %></h1>
+          </div>
+          
+      </li>
+      <li>
+        <div class="header_search">
+         <% if params[:controller] == 'games' %>
+          <%= form_tag games_path, :method => 'get' do %>
+               <%= text_field_tag :search, params[:search], class: "search_field" %>
+               <%= submit_tag "Search", :name => nil, class: "submit_button" %>
+          <% end %>
+         <% end %>
+         </div>
+      </li>
+      <li>
+          <div class="header_filter">
+              
+            <% if params[:controller] == 'games' %>
+              <%= form_tag sort_path, method: 'get', remote: true do %>
+                 <%= select_tag(:filter, options_for_select([['A-Z', 'a-z'], ['Z-A', 'z-a']]), class: "dropdown", prompt: "Sort by", onchange: "this.form.submit();") %> 
+                <% end %>
+            <% end %>
+          </div>
+      </li>
+      <li>
+        <% if params[:controller] == 'games' %>
+        <div class="add_button">
+          <a href="javascript:void(0)" id="add_link">Add Game</a>
+        </div>
+        <% end %>
+      </li>
+  </ul>
+  
+  
+</div>
+
+<script>
+  $("#add_link").click(function(){
+    $(".add_popup").css("display", "inline")
+  });
+</script>

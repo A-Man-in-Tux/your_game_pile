@@ -1,0 +1,147 @@
+@import "variables";
+
+.home_background{
+  position:relative;
+  z-index:1;
+  
+  height:800px;
+  width:100%;
+  background: image-url("nintendo-1557929.gif");
+  top:0;
+  opacity:.5;
+  
+}
+.home_content{
+  
+  position:relative;
+  top:-800px;
+  padding-top:20px;
+  z-index:2;
+  margin-bottom:70px;
+  height:100%;
+  
+
+}
+
+
+
+.logo{
+  margin: auto;
+  width: 132px;
+}
+
+.intro_message{
+  z-index:2;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 100;
+  font-size: 2.9em;
+  width:800px;
+  height:250px;
+  margin: auto;
+  color:$light-blue;
+  p{
+    height:200px;
+    text-align: center;
+  }
+}
+
+.signup{
+  background-color:$dark_blue;
+  width: 400px;
+  height:200px;
+  margin:auto;
+  padding-top:30px;
+  margin-bottom:40px;
+  
+  
+  a{
+      margin:auto;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 800;
+      color:white;
+      text-decoration:none;
+      font-size: 2.5em;
+      float:left;
+    }
+  .login_signup{
+    width:276px;
+    height:48px;
+    margin:auto;
+    
+    .divider{
+      margin:auto;
+      margin-left:10px;
+      margin-right:10px;
+      width: 1px;
+      height:100%;
+      background-color:white;
+      float:left;
+    }
+  }
+  
+  .try{
+    width:200px;
+    height:125px;
+    margin:auto;
+    margin-top:20px;
+    p{
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 100;
+      font-size: 1.25em;
+      color:white;
+      text-align:center;
+      margin:0;
+    }
+    #try_link{
+      margin:auto;
+      width:101px;
+    }
+  }
+  
+}
+
+.app_info{
+  background-color:$dark-blue;
+  width:100%;
+  height:500px;
+  
+  float:left;
+  ul{
+    
+  
+    margin:auto;
+    width:800px;
+    li{
+      list-style-type: none;
+      height:400px;
+      margin:auto;
+      margin-left:10px;
+      margin-top:50px;
+      float:left;
+      width:251px;
+      background-color:$light-blue;
+    
+      h1{
+        color:white;
+        margin:auto;
+        text-align:center;
+        margin:10px;
+        
+      }
+      p{
+        font-size:1em;
+        color:white;
+        font-family:'Exo 2', sans-serif;
+        font-weight: 100;
+        width:200px;
+        margin:auto;
+        text-align:justify;
+        
+      }
+      
+    }
+     #info_1{
+        margin-left:0px;
+      }
+  }
+}

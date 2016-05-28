@@ -1,28 +1,21 @@
-<% provide(:title, "Add Game") %>
 <h1>Add Game</h1>
 
-<%= form_tag("new", method: "get") do %>
+<%= form_tag("games/new", method: "get", remote: true) do %>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+    <%= submit_tag "Search", :name => nil, class: "submit_button"%>
 <% end %>
+<a href="javascript:void(0)" id="add_cancel">Cancel</a>
 
-<!--TODO paginat restults -->
-  <!--TODO make partial for game list -->
-  <ul class="game_list">
-    <% for game in @games %>
-    <li>
-        <%=form_for @game do |f| %>
-            <%=f.hidden_field :title, value: "#{game[:title]}" %>
-            <%=f.hidden_field :api_id, value: "#{game[:api_id]}" %>
-            <%=f.hidden_field :api_url, value: "#{game[:api_url]}" %>
-            <%=f.hidden_field :image_url, value: "#{game[:image_url]}" %>
-            <%=f.hidden_field :api_data, value: "#{game[:api_data]}" %>
-            
-            <%=image_submit_tag("#{game[:image_url]}", alt: "#{game[:title]}", class: "game-img") %>
-        <% end %>
-        <div class="game_lable">
-            <%= game[:title] %>
-        </div>
-    </li>
-    <% end %>
-  </ul>
+<ul class="add_game_list">
+    <%= render('add_games_list') %>
+</ul>
+
+<script>
+    $("#add_cancel").click(function(){
+        $(".add_popup").css("display", "none")
+    });
+    $(".thumb-img").click(function(){
+         $(".add_popup").css("display", "none")
+    });
+      
+</script>

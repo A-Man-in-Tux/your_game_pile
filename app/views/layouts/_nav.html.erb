@@ -1,20 +1,48 @@
-<div class="navbar">
-
-  <div class="navbar-header">
-    <a class="navbar-logo" href=<%= root_path %>>Your<br> Game<br> Pile<br></a>
-  </div>
+<% if current_page?(root_path) %>
+<% else %>
+<div id="nav">
+  <div class="navbar">
   
-  <div class="navbar-nav">
-    <ul class="navbar-account">
-     <% if logged_in? %>
-          <li class="nav-name"><%= current_user.username %></li>
-          <li><%= link_to "Log out", logout_path, method: "delete" %></li>
-          <li><%= link_to "Account", user_path(current_user) %></li>
-        <% else %>
-          <li class="nav-name">Not Signed in</li>
-          <li><%= link_to "Sign up", signup_path %></li>
-          <li><%= link_to "Log in", login_path %></li>
-      <% end %>
+    <div class="navbar-header">
+      <div class="navbar-logo">
+        <%= link_to image_tag('temp logo.png'), root_path %>
+      </div>
+    </div>
+    
+    <div class="navbar_segment">
+      <h1>Account</h1>
+      <ul class="navbar-account">
+       <% if logged_in? %>
+            <li class="nav-name"><%= current_user.username %></li>
+            <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+            <li><%= link_to "Account", user_path(current_user) %></li>
+          <% else %>
+            <li class="nav-name">Not Signed in</li>
+            <li><%= link_to "Sign up", signup_path %></li>
+            <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+    
+    <div class="navbar_segment">
+      <h1>Views</h1>
+      <ul class="navbar-veiws">
+        <li>
+          <%= link_to "Games", games_path%>
+        </li>
+        <li>
+          <%= link_to "Platforms", platforms_path %>
+        </li>
+      </ul>
+    </div><!--end of veiws segment -->
+    
+    <div class="navbar_segment">
+      <ul class="navbar-stats">
+        <h1>Stats</h1>
+        <li>
+        </li>
+      </ul>
+    </div><!--end of stats segment -->
   </div>
 </div>
-
+<% end %>

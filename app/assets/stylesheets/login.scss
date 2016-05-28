@@ -1,0 +1,31 @@
+@import "variables";
+  
+.login_box{
+  position:absolute;
+  z-index:4;
+  width:800px;
+  height:400px;
+  background-color:white;
+  top: 50%;
+  left: 50%;
+  margin-top:-200px;
+  margin-left:-400px;
+    
+  .login_form{
+    margin:auto;
+    width:600px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size:1em;
+    color:$bright_blue;
+    a{
+      text-decoration:none;
+      color:$light_blue;
+    }
+  }
+}
+
+
+#login_cancel{
+  float:right;
+}

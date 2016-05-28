@@ -7,16 +7,17 @@
   <%= csrf_meta_tags %>
   <!-- adds fonts from google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Exo+2:400,800,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Exo+2:100' rel='stylesheet' type='text/css'>
   <!-- sets the viewport size of a mobile device to the real size of the device -->
   <code><meta name="viewport" 
     content="width=device-width"></code>
 </head>
 <body>
    
-<div id="nav">
-  <%= render "layouts/nav" %>
-</div>
 
+  <%= render "layouts/nav" %>
+
+<%= render "layouts/header" %>
 
 <div id="content">
   <% flash.each do |message_type, message| %>

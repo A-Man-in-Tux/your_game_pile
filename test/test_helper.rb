@@ -2,7 +2,17 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require "minitest/reporters"
+require 'webmock/minitest'
+require 'vcr'
 Minitest::Reporters.use!
+
+WebMock.disable_net_connect!(:allow_localhost => true)
+
+#VCR config
+VCR.configure do |c|
+  c.cassette_library_dir = 'test/fixtures/dish_cassettes'
+  c.hook_into :webmock
+end
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
