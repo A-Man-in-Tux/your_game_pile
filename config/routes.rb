@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  
-
-  
-
   root 'static_pages#home'
 
   get    'about'  => 'static_pages#about'
@@ -10,25 +6,20 @@ Rails.application.routes.draw do
   get    'login'  => 'sessions#new'
   post   'login'  => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  
+
   get    'signup' => 'users#new'
-  
+
   get 'add' => 'games#new'
   get 'remove_game' => 'games#remove_game'
-  
-  
 
-  get "games/sort", as: "sort"
-  
-   
-  
+  get 'games/sort', as: 'sort'
+
   resources :users do
     resources :games
     resources :platforms
     resources :librarys, only: [:create, :destroy]
   end
   resources :librarys, only: [:create, :destroy]
-  
   resources :games
   resources :platforms
   # The priority is based upon order of creation: first created -> highest priority.

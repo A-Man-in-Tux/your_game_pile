@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":2302,"end_pos":2311},"message":"Style/AccessorMethodName: Do not prefix reader method names with `get_`.","cop_name":"Style/AccessorMethodName","status":"unsupported"}]

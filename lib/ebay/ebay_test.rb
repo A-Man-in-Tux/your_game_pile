@@ -1,5 +1,5 @@
 module Foo
   def hello
-    "hello"
+    'hello'
   end
 end

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":985,"end_pos":986},"message":"Style/EmptyLines: Extra blank line detected.","cop_name":"Style/EmptyLines","status":"uncorrected"},{"severity":"convention","location":{"begin_pos":986,"end_pos":987},"message":"Style/EmptyLines: Extra blank line detected.","cop_name":"Style/EmptyLines","status":"uncorrected"}]

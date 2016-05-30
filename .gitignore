@@ -21,3 +21,6 @@
 
 # Ignore api info
 config/env_vars.yml
+
+# Ignore game images
+public/development/game_images

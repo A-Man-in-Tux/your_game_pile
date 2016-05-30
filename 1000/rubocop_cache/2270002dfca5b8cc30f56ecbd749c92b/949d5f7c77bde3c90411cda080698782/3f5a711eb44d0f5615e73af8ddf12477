@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":1297,"end_pos":1298},"message":"Style/SpaceAfterComma: Space missing after comma.","cop_name":"Style/SpaceAfterComma","status":"uncorrected"}]

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":19,"end_pos":20},"message":"Style/EmptyLinesAroundModuleBody: Extra empty line detected at module body beginning.","cop_name":"Style/EmptyLinesAroundModuleBody","status":"uncorrected"}]

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":386,"end_pos":413},"message":"Style/IndentationConsistency: Inconsistent indentation detected.","cop_name":"Style/IndentationConsistency","status":"uncorrected"}]

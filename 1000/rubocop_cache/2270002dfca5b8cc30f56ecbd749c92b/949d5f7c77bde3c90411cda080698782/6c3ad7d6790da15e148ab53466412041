@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":470,"end_pos":497},"message":"Style/SelfAssignment: Use self-assignment shorthand `+=`.","cop_name":"Style/SelfAssignment","status":"uncorrected"}]

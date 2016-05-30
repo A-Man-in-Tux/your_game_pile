@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":269,"end_pos":280},"message":"Style/LeadingCommentSpace: Missing space after #.","cop_name":"Style/LeadingCommentSpace","status":"uncorrected"}]

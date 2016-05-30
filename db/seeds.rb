@@ -8,8 +8,8 @@
 
 # Make test games
     game_count = 0
-    
+
     while game_count > 500 do
       Game.create(title: "test_game_#{game_count}")
-      game_count = game_count + 1
+      game_count = game_count += 1
     end

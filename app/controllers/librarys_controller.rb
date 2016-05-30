@@ -6,26 +6,24 @@ class LibrarysController < ApplicationController
     current_user.add(game)
     redirect_to games_path
   end
-  
+
   def destroy
-   #game = Game.find(params[:id])
+   # game = Game.find(params[:id])
     @library.destroy
     redirect_to games_path
   end
-  
+
   private
-  
-    def logged_in_user
-      unless logged_in?
-        flash[:danger] = "Please sign in"
-        redirect_to login_url
-      end
+
+  def logged_in_user
+    unless logged_in?
+      flash[:danger] = 'Please sign in'
+      redirect_to login_url
     end
-  
-    def correct_user
-      @library = current_user.librarys.find_by(id: params[:id])
-      redirect_to root_url if @library.nil?
-    end
-    
-    
+  end
+
+  def correct_user
+    @library = current_user.librarys.find_by(id: params[:id])
+    redirect_to root_url if @library.nil?
+  end
 end
