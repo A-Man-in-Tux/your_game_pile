@@ -1,1 +1,0 @@
-[{"severity":"convention","location":{"begin_pos":1691,"end_pos":1708},"message":"Style/UnneededInterpolation: Prefer `to_s` over string interpolation.","cop_name":"Style/UnneededInterpolation","status":"uncorrected"}]

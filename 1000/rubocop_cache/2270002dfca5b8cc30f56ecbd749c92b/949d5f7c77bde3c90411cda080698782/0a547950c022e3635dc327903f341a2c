@@ -1,1 +1,0 @@
-[{"severity":"convention","location":{"begin_pos":153,"end_pos":154},"message":"Style/IndentationWidth: Use 2 (not 1) spaces for indentation.","cop_name":"Style/IndentationWidth","status":"uncorrected"}]

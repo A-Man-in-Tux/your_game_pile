@@ -1,1 +1,0 @@
-[{"severity":"convention","location":{"begin_pos":110,"end_pos":133},"message":"Rails/Validation: Prefer the new style validations `validates :column, uniqueness: value` over `validates_uniqueness_of`.","cop_name":"Rails/Validation","status":"unsupported"}]

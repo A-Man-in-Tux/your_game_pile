@@ -1,1 +1,0 @@
-[{"severity":"convention","location":{"begin_pos":338,"end_pos":339},"message":"Style/SpaceInsideHashLiteralBraces: Space inside } missing.","cop_name":"Style/SpaceInsideHashLiteralBraces","status":"uncorrected"}]
