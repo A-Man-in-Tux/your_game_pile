@@ -26,7 +26,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', logout_path
     assert_select 'a[href=?]', user_path(@user)
 
-    # make sure no login link on homepage
+    # make sure no login link on user homepage
     get root_path
     assert_template 'static_pages/_user_home'
     assert_select 'a[href=?]', login_path, count: 0

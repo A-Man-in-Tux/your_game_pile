@@ -103,11 +103,15 @@
           position:relative;
           top: 50%;
           margin-top: -15px;
-          height:30px;
+          height:25px;
+          background-color:$light_blue;
           .dropdown{
+            box-shadow: none;
             height:25px;
-            background-color:$light_blue;
+            background-image: none;
+            border: 0;
             color:white;
+            background: transparent;
           }
         }
         

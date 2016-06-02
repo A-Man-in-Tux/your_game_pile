@@ -64,6 +64,7 @@ class Game < ActiveRecord::Base
       game.store('platforms', platforms)
       games << game
     end
+    return games
   end
 
   def self.fetch_price

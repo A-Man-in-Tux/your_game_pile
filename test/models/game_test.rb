@@ -2,7 +2,8 @@ require 'test_helper'
 
 class GameTest < ActiveSupport::TestCase
   def setup
-    @game = Game.new(title: 'foo game', api_id: 7342970974890489)
+    @game = games(:foo_game)
+    @api_key = ENV['FB_APP_ID']
   end
 
   test 'should be valid' do
@@ -18,5 +19,14 @@ class GameTest < ActiveSupport::TestCase
     duplicate_game = @game.dup
     @game.save
     assert_not duplicate_game.valid?
+  end
+
+  test 'giantbomb_search should return parsed json' do
+    VCR.use_cassette('giantbomb_api_response') do
+      @data = Game.giantbomb_search('megaman')
+      assert_not @data == nil
+      assert_not @data[1][:title] == nil
+      assert @data[1][:title] == "Mega Man 9"
+    end
   end
 end

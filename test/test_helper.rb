@@ -6,11 +6,11 @@ require 'webmock/minitest'
 require 'vcr'
 Minitest::Reporters.use!
 
-WebMock.disable_net_connect!(:allow_localhost => true)
+
 
 # VCR config
 VCR.configure do |c|
-  c.cassette_library_dir = 'test/fixtures/dish_cassettes'
+  c.cassette_library_dir = 'test/vcr_cassettes'
   c.hook_into :webmock
 end
 
